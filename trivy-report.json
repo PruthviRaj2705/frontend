@@ -3,15 +3,15 @@
   "Trivy": {
     "Version": "0.75.0"
   },
-  "ReportID": "01a1f49f-8c0a-719e-a99f-5890d738b994",
-  "CreatedAt": "2026-11-19T21:54:19.2101062+05:30",
-  "ArtifactID": "sha256:4597f8a3442b161400f88cc5f126de9975222e884f7d227987149b8c1e1a5573",
-  "ArtifactName": "C:/Users/pruth/AppData/Local/Temp/security-update-fzsp4h6a/project",
+  "ReportID": "01a1f4a2-4754-75a6-bd9b-da366fb77fc5",
+  "CreatedAt": "2026-11-19T21:57:18.2283704+05:30",
+  "ArtifactID": "sha256:7bacc69c91d288838019b57383b20ab023c622064d6afbc9aa076a90600268f3",
+  "ArtifactName": "C:/Users/pruth/AppData/Local/Temp/security-update-9b4m25t8/project",
   "ArtifactType": "repository",
   "Metadata": {
     "RepoURL": "https://github.com/PruthviRaj2705/frontend.git",
     "Branch": "main",
-    "Commit": "24d27390766e6c92dc3f5307a29aaa3fe8123caf",
+    "Commit": "9cd81d02fad8c003c535a578adb4aadc1add1a45",
     "CommitMsg": "fix(security): automated DevSecOps vulnerability remediation",
     "Author": "DevSecOps Bot \u003cdevsecops-bot@pipeline.local\u003e",
     "Committer": "DevSecOps Bot \u003cdevsecops-bot@pipeline.local\u003e"
@@ -27,14 +27,14 @@
           "Name": "axios",
           "Identifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "Version": "1.7.9",
           "Relationship": "direct",
           "Locations": [
             {
               "StartLine": 16,
-              "EndLine": 20
+              "EndLine": 19
             }
           ],
           "AnalyzedBy": "npm"
@@ -44,14 +44,14 @@
           "Name": "jquery",
           "Identifier": {
             "PURL": "pkg:npm/jquery@3.7.1",
-            "UID": "e98ca7d8251063cc"
+            "UID": "780752dd60cd9612"
           },
           "Version": "3.7.1",
           "Relationship": "direct",
           "Locations": [
             {
-              "StartLine": 21,
-              "EndLine": 25
+              "StartLine": 20,
+              "EndLine": 23
             }
           ],
           "AnalyzedBy": "npm"
@@ -61,14 +61,14 @@
           "Name": "lodash",
           "Identifier": {
             "PURL": "pkg:npm/lodash@4.17.21",
-            "UID": "280eea9758f2e6c3"
+            "UID": "eea03f4aea392b90"
           },
           "Version": "4.17.21",
           "Relationship": "direct",
           "Locations": [
             {
-              "StartLine": 26,
-              "EndLine": 30
+              "StartLine": 24,
+              "EndLine": 27
             }
           ],
           "AnalyzedBy": "npm"
@@ -84,7 +84,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.8.2, 0.30.0",
@@ -96,7 +96,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:9d99cbcee3516669fcd11382091b988a78b84df167dc6c9963d8fe051978cd79",
+          "Fingerprint": "sha256:a6c9694f98955b05290cff07387a37f5e1405e34705522edc05ed520d43cfc82",
           "Title": "axios: Possible SSRF and Credential Leakage via Absolute URL in axios Requests",
           "Description": "axios is a promise based HTTP client for the browser and node.js. The issue occurs when passing absolute URLs rather than protocol-relative URLs to axios. Even if ⁠baseURL is set, axios sends the request to the specified absolute URL, potentially causing SSRF and credential leakage. This issue impacts both server-side and client-side usage of axios. This issue is fixed in 1.8.2.",
           "Severity": "HIGH",
@@ -146,7 +146,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.12.0, 0.30.2",
@@ -158,7 +158,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:b2c296576c9fd66c38791ebe2c395ed5ebba35faaad4eab60abd6991ba1cdb91",
+          "Fingerprint": "sha256:963846c7924642c352d60d01bf14050c4543935e66da3ba741426a856b5dac46",
           "Title": "axios: Axios DoS via lack of data size check",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. When Axios starting in version 0.28.0 and prior to versions 0.30.2 and 1.12.0 runs on Node.js and is given a URL with the `data:` scheme, it does not perform HTTP. Instead, its Node http adapter decodes the entire payload into memory (`Buffer`/`Blob`) and returns a synthetic 200 response. This path ignores `maxContentLength` / `maxBodyLength` (which only protect HTTP responses), so an attacker can supply a very large `data:` URI and cause the process to allocate unbounded memory and crash (DoS), even if the caller requested `responseType: 'stream'`. Versions 0.30.2 and 1.12.0 contain a patch for the issue.",
           "Severity": "HIGH",
@@ -207,7 +207,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.13.5, 0.30.3",
@@ -219,7 +219,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:8474e7051ba7e0d8cf56f39feda92a92c2e01e29892c687514a4083684c718d6",
+          "Fingerprint": "sha256:e203e53164b79047a2e161ef290f58279e47d4dcacbbafd4dade9be66bb05857",
           "Title": "axios: Axios affected by Denial of Service via __proto__ Key in mergeConfig",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to versions 0.30.3 and 1.13.5, the mergeConfig function in axios crashes with a TypeError when processing configuration objects containing __proto__ as an own property. An attacker can trigger this by providing a malicious configuration object created via JSON.parse(), causing complete denial of service. This vulnerability is fixed in versions 0.30.3 and 1.13.5.",
           "Severity": "HIGH",
@@ -310,7 +310,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.1, 0.31.1",
@@ -322,7 +322,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:a319be73c44f7ad2596b6aad668dbb888881780f8c3e389d8b6fb149741f549b",
+          "Fingerprint": "sha256:ca53c8d1280acdf7c9d41160a3feeb2645201063244a8a3a3b657532225d488f",
           "Title": "axios: Axios: HTTP Transport Hijacking via Prototype Pollution",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.1 and 0.31.1, when Object.prototype has been polluted by any co-dependency with keys that axios reads without a hasOwnProperty guard, an attacker can (a) silently intercept and modify every JSON response before the application sees it, or (b) fully hijack the underlying HTTP transport, gaining access to request credentials, headers, and body. The precondition is prototype pollution from a separate source in the same process. This vulnerability is fixed in 1.15.1 and 0.31.1.",
           "Severity": "HIGH",
@@ -404,7 +404,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.1, 0.31.1",
@@ -416,7 +416,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:b4a31dcbc8417aac4fbc7ab6c7ed2b9e6ac806309d1ba0ec93a504d64aa93614",
+          "Fingerprint": "sha256:5d24b83c84f552f2aae74c187494bd2f444879ab43b30d3cad2dac9c7eaa8dad",
           "Title": "axios: Axios: Arbitrary HTTP header injection via prototype pollution",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.1 and 0.31.1, a prototype pollution gadget exists in the Axios HTTP adapter (lib/adapters/http.js) that allows an attacker to inject arbitrary HTTP headers into outgoing requests. The vulnerability exploits duck-type checking of the data payload, where if Object.prototype is polluted with getHeaders, append, pipe, on, once, and Symbol.toStringTag, Axios misidentifies any plain object payload as a FormData instance and calls the attacker-controlled getHeaders() function, merging the returned headers into the outgoing request. The vulnerable code resides exclusively in lib/adapters/http.js. The prototype pollution source does not need to originate from Axios itself — any prototype pollution primitive in any dependency in the application's dependency tree is sufficient to trigger this gadget. This vulnerability is fixed in 1.15.1 and 0.31.1.",
           "Severity": "HIGH",
@@ -459,7 +459,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.1, 0.31.1",
@@ -471,7 +471,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:f64268fa1275a04db7b0504fb6a52836b540b84634def15d75d3759e52dda5d5",
+          "Fingerprint": "sha256:a76d15be68f81e2ef57acc7b28e09635b3b1e469bac23c6971f2458f4b801618",
           "Title": "axios: Axios: NO_PROXY bypass via crafted URL",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.1 and 0.31.1, an attacker who can influence the target URL of an Axios request can use any address in the 127.0.0.0/8 range (other than 127.0.0.1) to completely bypass the NO_PROXY protection. This vulnerability is due to an incomplete for CVE-2025-62718, This vulnerability is fixed in 1.15.1 and 0.31.1.",
           "Severity": "HIGH",
@@ -561,7 +561,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.2",
@@ -573,7 +573,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:9d3dba7bcfbde5c0fdfe1e09a7b9b1c42c1188d80223316ced2bbb3f0f9b87de",
+          "Fingerprint": "sha256:472d3269fa557c0ba502087c1c27ca0af6ba186c98c19fab72fbaaf5a1eb91dc",
           "Title": "axios: Axios: Prototype pollution allows information disclosure and request manipulation",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. From version 1.0.0 to before version 1.15.2, fFive config properties (auth, baseURL, socketPath, beforeRedirect, and insecureHTTPParser) in the HTTP adapter are read via direct property access without hasOwnProperty guards, making them exploitable as prototype pollution gadgets. When Object.prototype is polluted by another dependency in the same process, axios silently picks up these polluted values on every outbound HTTP request. This issue has been patched in version 1.15.2.",
           "Severity": "HIGH",
@@ -644,7 +644,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.16.0, 0.32.0",
@@ -656,7 +656,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:19dd5614cc27c2b0749a3bd63329829220454d173f1684fc27482efcb977e9f9",
+          "Fingerprint": "sha256:232a618b6b73bedab098ab207d559c8e4c985bf3cca59dd5289b98217d063a21",
           "Title": "axios: Axios: Information disclosure of proxy credentials via HTTP redirects",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 0.32.0 and 1.16.0, Axios’ Node.js HTTP adapter can leak proxy credentials to a redirect target in affected versions. When a request is sent through an authenticated proxy, Axios may add a Proxy-Authorization header. If Axios then follows a redirect and the redirected request is no longer sent through that proxy, the stale Proxy-Authorization header can remain on the redirected request and be sent to the redirect target. This affects Node.js's use of Axios with automatic redirects enabled and an authenticated proxy configuration. Browser adapters are not affected. This vulnerability is fixed in 0.32.0 and 1.16.0.",
           "Severity": "HIGH",
@@ -749,7 +749,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.16.0, 0.32.0",
@@ -761,7 +761,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:13503ccda472debf019405c8ef41503d486110a95395b68633fe7425219d71e0",
+          "Fingerprint": "sha256:33efaf04eead816ed486c743107afaa2ddff246bf2ff37b8b384aaf0cd3632d3",
           "Title": "axios: Axios: Information disclosure of proxy credentials via redirect flows",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 0.32.0 and 1.16.0, Axios’s Node.js HTTP adapter may forward a Proxy-Authorization header to a redirected origin during specific proxy-to-direct redirect flows. This affects Node.js usage, where an initial HTTP request is sent through an authenticated HTTP proxy, redirects are followed, and the redirected URL is no longer proxied. Under affected redirect shapes, the final origin can receive the proxy credential that was intended only for the outbound proxy. This vulnerability is fixed in 0.32.0 and 1.16.0.",
           "Severity": "HIGH",
@@ -862,7 +862,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.16.0",
@@ -874,7 +874,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:e045d25dfac5769356bd2aed854b5c885e5c9e80059a6c77702241a9aaf0a347",
+          "Fingerprint": "sha256:1b003d08d76f94e25148bc4eca1a92a32ca908e36b3335879543415432c62e36",
           "Title": "axios: Axios: Denial of Service due to unenforced request and response size limits",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Axios versions 1.7.0 through 1.15.x did not enforce configured request and response size limits when requests were sent with the fetch adapter. Applications that selected adapter: 'fetch', or ran in environments where axios resolved to the fetch adapter, could receive or send bodies larger than maxContentLength or maxBodyLength despite those limits being explicitly configured. This can cause resource exhaustion in server-side usage when a malicious or compromised server returns an oversized response, when an attacker can supply a large data: URL, or when an application forwards attacker-controlled request bodies through axios while relying on maxBodyLength as a boundary. This vulnerability is fixed in 0.32.0 and 1.16.0.",
           "Severity": "HIGH",
@@ -971,7 +971,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.16.0",
@@ -983,7 +983,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:0d5f6268fa097d52ed973e20f3e498eb1ea95ee53b6fb768a55edc30723f83b6",
+          "Fingerprint": "sha256:67736a0934d0381db7d9fc5e386c486d27b2c377fcab8b1f1bbd94008a6f26e3",
           "Title": "axios: Axios: Man-in-the-Middle (MITM) attack via Prototype Pollution",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. From 1.0.0 to before 1.16.0, the Axios library is vulnerable to a Prototype Pollution \"Gadget\" attack that allows any Object.prototype pollution in the application's dependency tree to be escalated into a full Man-in-the-Middle (MITM) attack — intercepting, reading, and modifying all HTTP traffic including authentication credentials. The HTTP adapter at lib/adapters/http.js:670 reads config.proxy via standard property access, which traverses the prototype chain. Because proxy is not present in Axios defaults, the merged config object has no own proxy property, making it trivially injectable via prototype pollution. Once injected, setProxy() routes all HTTP requests through the attacker's proxy server. This vulnerability is fixed in 1.16.0.",
           "Severity": "HIGH",
@@ -1080,7 +1080,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.2, 0.31.1",
@@ -1092,7 +1092,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:18473a0961b72d4c00ecaa1f4842ab2d8aab744c47062490bf594994b587a929",
+          "Fingerprint": "sha256:1ab7c3620d0154ab915f58b0c550ccf8a76331e699d1f53226858eae1b46ab3e",
           "Title": "axios: Axios: Information disclosure due to prototype pollution vulnerability",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. From 0.19.0 to before 0.31.1 and 1.15.2, Axios contains prototype-pollution gadgets in request config processing. If another vulnerability in the same JavaScript process has already polluted Object.prototype.transformResponse, affected Axios versions may treat that inherited value as request configuration or as an option validator. Axios does not itself create the prototype pollution. Exploitability requires a separate prototype-pollution vulnerability or equivalent attacker control over Object.prototype before Axios creates a request. This vulnerability is fixed in 0.31.1 and 1.15.2.",
           "Severity": "HIGH",
@@ -1192,7 +1192,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.16.0, 0.32.0",
@@ -1204,7 +1204,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:1166205a8ffeb45b64299e4843217b063c27a30f42048050b946ff60d215de1b",
+          "Fingerprint": "sha256:3cd917074c5af8557b5f39df7fe37f00955b712abbb114f8432fbd29e2abde5b",
           "Title": "axios: Axios: Client-side Denial of Service via unescaped regex metacharacters in XSRF cookie name",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Axios versions before 0.32.0 on the 0.x line and before 1.16.0 on the 1.x line build a regular expression from the configured XSRF cookie name without escaping regex metacharacters. In standard browser environments, an attacker who can influence the cookie name passed to axios can cause expensive regex backtracking while axios reads document.cookie. The practical impact is client-side availability degradation, such as freezing the affected browser tab while axios prepares a request. The issue does not affect ordinary Node.js HTTP adapter usage, React Native, or web workers, where axios does not read document.cookie. This vulnerability is fixed in 0.32.0 and 1.16.0.",
           "Severity": "HIGH",
@@ -1294,7 +1294,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.0, 0.31.0",
@@ -1306,7 +1306,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:96b48bcab07846f2381af8d64104fb0ec25c32d86be1dae59fca133aaab8b08f",
+          "Fingerprint": "sha256:604f005b4c587d4c1fbfdacdf5beba488d31328b2afce2d8de83a6fd7735883f",
           "Title": "axios: Axios: Server-Side Request Forgery and proxy bypass due to improper hostname normalization",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.0 and 0.31.0, Axios does not correctly handle hostname normalization when checking NO_PROXY rules. Requests to loopback addresses like localhost. (with a trailing dot) or [::1] (IPv6 literal) skip NO_PROXY matching and go through the configured proxy. This goes against what developers expect and lets attackers force requests through a proxy, even if NO_PROXY is set up to protect loopback or internal services. This issue leads to the possibility of proxy bypass and SSRF vulnerabilities allowing attackers to reach sensitive loopback or internal services despite the configured protections. This vulnerability is fixed in 1.15.0 and 0.31.0.",
           "Severity": "MEDIUM",
@@ -1401,7 +1401,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "0.34.0, 1.20.0",
@@ -1413,7 +1413,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:8ff289d0dd33a6fd21483f870d285092a1e2a7447be9e149ef558aea7446225e",
+          "Fingerprint": "sha256:1613fc169e974eafcdd61f36b4b22ccd82494d813549ef8db40499fec5a1228c",
           "Title": "axios: axios: Unintended HTTP method override via prototype pollution gadget",
           "Description": "Axios is a promise-based HTTP client for the browser and Node.js. From 0.27.2 until 0.34.0 and 1.20.0, Axios default-instance requests that omit an explicit method can read an inherited method value from Object.prototype. If another vulnerability in the same process pollutes Object.prototype.method, calls such as axios.request({ url }) and axios({ url }) can send a state-changing HTTP method instead of the expected default GET. Axios does not create the prototype pollution source. This is a read-side gadget in axios request dispatch. This issue is fixed in version 0.34.0 and 1.20.0.",
           "Severity": "MEDIUM",
@@ -1458,7 +1458,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.20.0",
@@ -1470,7 +1470,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:8c5e1aa05c904c92d17406eae487611545187e02dc22f67258dc5519fc38925e",
+          "Fingerprint": "sha256:41ca9071533ee92cf14bcb0322fbdb8425a3be0873ba1361d7a952e339b6084d",
           "Title": "axios: Axios: HTTP header injection via inherited prototype properties",
           "Description": "Axios is a promise-based HTTP client for the browser and Node.js. From 1.0.0 until 1.20.0, the dispatchRequest function normalizes inherited Object.prototype.headers from a replacement request configuration. A separate same-process prototype-pollution flaw sets Object.prototype.headers, and trusted request interceptors return a new ordinary configuration without an own headers property. After the interceptor chain, dispatchRequest resolves the inherited headers during normalization. Downstream request processing can observe attacker-controlled headers, including authorization-related values. This issue is fixed in version 1.20.0.",
           "Severity": "MEDIUM",
@@ -1515,7 +1515,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.20.0",
@@ -1527,7 +1527,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:4ea239f4c566006251ccab9f88f56dc70430b1900a0b6e542add038a46e2fd2e",
+          "Fingerprint": "sha256:8e72e5689741bcdfc37203b3ed5c2311de6ef4615115c5e57b4ca6b24c2c8829",
           "Title": "axios: Axios: Outbound HTTP request manipulation via fetch adapter prototype pollution",
           "Description": "Axios is a promise-based HTTP client for the browser and Node.js. From 1.7.0 until 1.20.0, the fetch adapter constructs a Request with sanitized resolvedOptions but then calls fetch with the original fetchOptions. A separate same-process prototype-pollution flaw populates Object.prototype.headers so fetchOptions.headers resolves through inheritance. The inherited fetchOptions.headers value overrides the sanitized Request headers through the second argument to fetch after Request construction. Attacker-controlled request headers can alter authorization, caching, metadata-service access, or application-specific behavior. This issue is fixed in version 1.20.0.",
           "Severity": "MEDIUM",
@@ -1571,7 +1571,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.0, 0.31.0",
@@ -1583,7 +1583,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:1daa19ff9372b2d34f67b3e09768ab761042650a0aa61909a4e4b7b14b4c9708",
+          "Fingerprint": "sha256:a0e5d44443f572ec8e843bdc7ff2a0a072f3338c502815a865968917b87e88ae",
           "Title": "axios: Axios: Remote Code Execution via Prototype Pollution escalation",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Versions prior to 1.15.0 and 0.3.1 are vulnerable to a specific gadget-style attack chain in which prototype pollution in a third-party dependency may be leveraged to inject unsanitized header values into outbound requests. This vulnerability is fixed in 1.15.0 and 0.3.1.",
           "Severity": "MEDIUM",
@@ -1687,7 +1687,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.1, 0.31.1",
@@ -1699,7 +1699,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:f1398164d216ad94ec4456fb2eaae9af7fec48ce636dc1bdd868980f482379b0",
+          "Fingerprint": "sha256:1766db1cff0db429bb224e33458304d059fd8baadd2540ab109b371d185eb070",
           "Title": "axios: Axios: Denial of Service via oversized streamed uploads bypassing body limits",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.1 and 0.31.1, for stream request bodies, maxBodyLength is bypassed when maxRedirects is set to 0 (native http/https transport path). Oversized streamed uploads are sent fully even when the caller sets strict body limits. This vulnerability is fixed in 1.15.1 and 0.31.1.",
           "Severity": "MEDIUM",
@@ -1741,7 +1741,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.1, 0.31.1",
@@ -1753,7 +1753,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:d1657ea8f231a1706738b7cae595008258be7fc7ba8df3d11d837ba1b95aaa41",
+          "Fingerprint": "sha256:9b5b34d38df533157aac921e6f8e3c1f898c920c8c7484175d36288abf7f4ba6",
           "Title": "axios: Axios: Denial of Service via unbounded stream consumption when 'responseType: 'stream'' is used",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.1 and 0.31.1, when responseType: 'stream' is used, Axios returns the response stream without enforcing maxContentLength. This bypasses configured response-size limits and allows unbounded downstream consumption. This vulnerability is fixed in 1.15.1 and 0.31.1.",
           "Severity": "MEDIUM",
@@ -1795,7 +1795,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.1",
@@ -1807,7 +1807,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:04b98e18bf164aaa0d535f02234edf857443c15f76d65c03f10041aa04695427",
+          "Fingerprint": "sha256:65ff68b73bc8b39ee4addd33dac367ad1e1fb09647dada7d959d56bd33321fef",
           "Title": "axios: Node.js: Axios: Information disclosure via CRLF injection in multipart Content-Type header",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. From 1.0.0 to before 1.15.1, the FormDataPart constructor in lib/helpers/formDataToStream.js interpolates value.type directly into the Content-Type header of each multipart part without sanitizing CRLF (\\r\\n) sequences. An attacker who controls the .type property of a Blob/File-like object (e.g., via a user-uploaded file in a Node.js proxy service) can inject arbitrary MIME part headers into the multipart form-data body. This bypasses Node.js v18+ built-in header protections because the injection targets the multipart body structure, not HTTP request headers. This vulnerability is fixed in 1.15.1.",
           "Severity": "MEDIUM",
@@ -1849,7 +1849,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.1, 0.31.1",
@@ -1861,7 +1861,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:1e6668f26ba238327df8fc651e925469e6eb4aacb804c51776a85fc069345141",
+          "Fingerprint": "sha256:54330183e3ef88bcc8b72f5cc43ccc9b8f57e875c6b81467711ee3197f11d3d7",
           "Title": "axios: Axios: Information disclosure due to `no_proxy` bypass",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.1 and 0.31.1, he fix for no_proxy hostname normalization bypass is incomplete. When no_proxy=localhost is set, requests to 127.0.0.1 and [::1] still route through the proxy instead of bypassing it. The shouldBypassProxy() function does pure string matching — it does not resolve IP aliases or loopback equivalents. This vulnerability is fixed in 1.15.1 and 0.31.1.",
           "Severity": "MEDIUM",
@@ -1908,7 +1908,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.1, 0.31.1",
@@ -1920,7 +1920,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:36ff73ed2430b7f951aa68e5ed87106709fee593f467b3b859ee616177e1c07a",
+          "Fingerprint": "sha256:3b6a316a241117e339d544af851030c474c09f40a10d17f85affaf39c16db388",
           "Title": "axios: Node.js: Axios: Denial of Service via unbounded recursion in toFormData with deeply nested request data",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.1 and 0.31.1, toFormData recursively walks nested objects with no depth limit, so a deeply nested value passed as request data crashes the Node.js process with a RangeError. This vulnerability is fixed in 1.15.1 and 0.31.1.",
           "Severity": "MEDIUM",
@@ -2013,7 +2013,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.1, 0.31.1",
@@ -2025,7 +2025,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:5dc84b522187fa66af13f0a29aaa10de7ce790accc6ede89c7f60facb33ea154",
+          "Fingerprint": "sha256:a33714936d9dfd056be39b873fb98ff20e486c40372c61a6d9e3a08105914a1c",
           "Title": "axios: Axios: Authentication bypass due to prototype pollution of HTTP error handling",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.1 and 0.31.1, the Axios library is vulnerable to a Prototype Pollution \"Gadget\" attack that allows any Object.prototype pollution to silently suppress all HTTP error responses (401, 403, 500, etc.), causing them to be treated as successful responses. This completely bypasses application-level authentication and error handling. The root cause is that validateStatus is the only config property using the mergeDirectKeys merge strategy, which uses JavaScript's in operator — an operator that inherently traverses the prototype chain. When Object.prototype.validateStatus is polluted with () =\u003e true, all HTTP status codes are accepted as success. This vulnerability is fixed in 1.15.1 and 0.31.1.",
           "Severity": "MEDIUM",
@@ -2113,7 +2113,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.1, 0.31.1",
@@ -2125,7 +2125,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:e7220dec2a922baed7d13a0f30050f1269dc8581179cc25566f7850f14f0ccfe",
+          "Fingerprint": "sha256:a68ca60ada7016f1549ab8b7de3bd90f9c93bdfc5cb64f4e0172c526d9f6ad08",
           "Title": "axios: Axios: XSRF token bypass leading to information disclosure",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.1 and 0.31.1, the Axios library's XSRF token protection logic uses JavaScript truthy/falsy semantics instead of strict boolean comparison for the withXSRFToken config property. When this property is set to any truthy non-boolean value (via prototype pollution or misconfiguration), the same-origin check (isURLSameOrigin) is short-circuited, causing XSRF tokens to be sent to all request targets including cross-origin servers controlled by an attacker. This vulnerability is fixed in 1.15.1 and 0.31.1.",
           "Severity": "MEDIUM",
@@ -2168,7 +2168,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.2",
@@ -2180,7 +2180,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:231324cd2232e347d74f0d529c8f7ad1a8ba59df96f7b350358e22a602f3aefd",
+          "Fingerprint": "sha256:26fdd74666d24445a40243d15839e6c66fa529d2e767033cae53081e3c68e12c",
           "Title": "axios: Axios: Invisible JSON Response Tampering via Prototype Pollution Gadget",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. From 1.0.0 to before 1.15.2, he Axios library is vulnerable to a Prototype Pollution \"Gadget\" attack that allows any Object.prototype pollution in the application's dependency tree to be escalated into surgical, invisible modification of all JSON API responses — including privilege escalation, balance manipulation, and authorization bypass. The default transformResponse function at lib/defaults/index.js:124 calls JSON.parse(data, this.parseReviver), where this is the merged config object. Because parseReviver is not present in Axios defaults, not validated by assertOptions, and not subject to any constraints, a polluted Object.prototype.parseReviver function is called for every key-value pair in every JSON response, allowing the attacker to selectively modify individual values while leaving the rest of the response intact. This vulnerability is fixed in 1.15.2.",
           "Severity": "MEDIUM",
@@ -2270,7 +2270,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.16.0, 0.32.0",
@@ -2282,7 +2282,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:c266e13f3f420221e513922a78aac2be3dd646e406f55302841ab4b3610cd72a",
+          "Fingerprint": "sha256:a76f4b1ca428316908f2ef4ab8e61d7b0cb4b473de8189410714c0f37f7424b9",
           "Title": "axios: Axios: Information disclosure and denial of service due to prototype pollution",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 0.32.0 and 1.16.0, axios exposes two read-side prototype-pollution gadgets. When Object.prototype is polluted by an upstream dependency in the same process (e.g. lodash _.merge / CVE-2018-16487), axios silently picks up the polluted values. (1) lib/utils.js line 406 builds merge()'s accumulator as result = {}, so result[targetKey] (line 414) walks Object.prototype and the polluted bucket's own keys are copied into the merged headers and ride out on the wire. (2) lib/core/mergeConfig.js line 26 builds the hasOwnProperty descriptor as a plain-object literal. Object.defineProperty reads descriptor.get/descriptor.set via the prototype chain, so a polluted Object.prototype.get or Object.prototype.set makes the call throw TypeError synchronously on every axios request. This vulnerability is fixed in 0.32.0 and 1.16.0.",
           "Severity": "MEDIUM",
@@ -2330,7 +2330,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "0.33.0, 1.18.0",
@@ -2342,7 +2342,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:a02ccaa8fec109e7de16298daf3ad31c24f800beacb377089846b34d8a4ad90f",
+          "Fingerprint": "sha256:bf5745657ef1077e63f1eb5c110c911cae9a9ac7c4c9a2842068a51c6cad304c",
           "Title": "axios: axios: Denial of Service via uncontrolled recursion in form data processing",
           "Description": "axios versions from 0.28.0 before 0.33.0 and from 1.0.0 before 1.18.0 contain uncontrolled recursion in formDataToJSON (exposed as axios.formToJSON() and used internally when serializing FormData with Content-Type: application/json). When an application passes attacker-controlled FormData field names, a field name with thousands of nested bracket-delimited segments causes unbounded recursion in buildPath(), exhausting the JavaScript call stack (RangeError: Maximum call stack size exceeded) and causing denial of service for that request, or process termination in applications without appropriate error handling.",
           "Severity": "MEDIUM",
@@ -2397,7 +2397,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "0.33.0, 1.18.0",
@@ -2409,7 +2409,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:2d386afcc354a8ec5da90073f3f00b08ee5ae63dca8008423e3ccab133930010",
+          "Fingerprint": "sha256:eb62ab70719ea98c7ca03c78668d33f92438c8af88d6fbf7f45c449c008790b7",
           "Title": "axios versions 0.28.0 and later contain uncontrolled recursion in form ...",
           "Description": "axios versions 0.28.0 and later contain uncontrolled recursion in formDataToJSON when processing FormData field names with deeply nested bracket segments. Attackers can supply FormData with field names containing thousands of nested brackets to exhaust the JavaScript call stack and trigger RangeError, causing request failure or process termination in applications that do not handle the exception.",
           "Severity": "MEDIUM",
@@ -2457,7 +2457,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.18.0, 0.33.0",
@@ -2469,7 +2469,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:84617b395d8a29987d515ae81d8f6e020cb16fd025a8209a3701317d7fd40dc6",
+          "Fingerprint": "sha256:b5d6f47d1d001be02588aca7dafa74dbb2ca6e2555154637a28d7fce58c28cd7",
           "Title": "axios: axios: Prototype Pollution allows unauthorized data transmission and network redirection",
           "Description": "axios is vulnerable to read-side prototype-pollution gadgets that can alter request construction when Object.prototype has already been polluted by a separate vulnerability or dependency. In the bodyless method aliases (axios.get(), axios.delete(), axios.head(), axios.options()), inherited data is read via (config || {}).data before config normalization, causing an attacker-controlled body to be sent on requests that did not set one. Additional low-level paths, only reachable when calling exported adapters/helpers (e.g. lib/adapters/http.js, unsafe/helpers/resolveConfig.js) directly with plain configs and no own proxy or paramsSerializer, can inherit polluted proxy values (routing requests through an attacker-controlled proxy) or paramsSerializer values (attacker-controlled URL serialization). These low-level gadgets do not reproduce through normal high-level axios calls on 1.15.2+. The issue is fixed in axios 1.18.0 and 0.33.0.",
           "Severity": "MEDIUM",
@@ -2524,7 +2524,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.18.0",
@@ -2536,7 +2536,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:2a8d658cb4854b5f51e525c0a41b305e6ed2044295ed5fc8aaa4da2f222245b3",
+          "Fingerprint": "sha256:c4ece0976da615b7467e66ffe8326749ab02122497b885aa1e4a2c0091ffab90",
           "Title": "axios: axios: Denial of Service via maxBodyLength bypass with ReadableStream",
           "Description": "axios versions 1.7.0 before 1.18.0 fail to enforce maxBodyLength for WHATWG ReadableStream request bodies in the fetch adapter when Content-Length cannot be determined. Attackers can supply unknown-length stream data to bypass upload size limits and cause uncontrolled network egress or resource exhaustion.",
           "Severity": "MEDIUM",
@@ -2588,7 +2588,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "0.33.0, 1.18.0",
@@ -2600,7 +2600,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:f7df8e9f08b20f89db85bb71fde8526afc2dee5338aef6c23e8f2a1e0833a020",
+          "Fingerprint": "sha256:cc9087b862c69dc2b8b3ec8225ff19fbd93d627514098aad416c7ce45351d294",
           "Title": "axios: axios: Information disclosure and data manipulation via prototype pollution",
           "Description": "axios before 0.33.0 (and 1.x before 1.18.0) can consume inherited properties from nested request option objects when the JavaScript process's Object.prototype has already been polluted by another component. While the top-level merged config uses a null prototype, nested plain objects such as auth and paramsSerializer are cloned into ordinary objects and read without own-property checks. When an application passes placeholder nested objects such as auth: {} or paramsSerializer: {}, inherited username/password values can cause silent injection of an Authorization: Basic header, and inherited encode/serialize values can alter query-string serialization (full serializer replacement requires a function-valued pollution primitive). This is exploitable only in the presence of pre-existing prototype pollution.",
           "Severity": "MEDIUM",
@@ -2655,7 +2655,7 @@
           "PkgName": "axios",
           "PkgIdentifier": {
             "PURL": "pkg:npm/axios@1.7.9",
-            "UID": "d91c7653f721a36e"
+            "UID": "3d3081946284d389"
           },
           "InstalledVersion": "1.7.9",
           "FixedVersion": "1.15.1, 0.31.1",
@@ -2667,7 +2667,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:d01d74204e3c46f8b774d4fae3075185106c56a4d666c85979e9d399f4164689",
+          "Fingerprint": "sha256:6e3a443f303bbe62c143270ae54c952ea318e32fa4d63961a13ae738ed77f949",
           "Title": "axios: Axios: Incorrect null byte handling can lead to data integrity issues",
           "Description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.1 and 0.31.1, the encode() function in lib/helpers/AxiosURLSearchParams.js contains a character mapping (charMap) at line 21 that reverses the safe percent-encoding of null bytes. After encodeURIComponent('\\x00') correctly produces the safe sequence %00, the charMap entry '%00': '\\x00' converts it back to a raw null byte. Primary impact is limited because the standard axios request flow is not affected. This vulnerability is fixed in 1.15.1 and 0.31.1.",
           "Severity": "LOW",
@@ -2710,7 +2710,7 @@
           "PkgName": "lodash",
           "PkgIdentifier": {
             "PURL": "pkg:npm/lodash@4.17.21",
-            "UID": "280eea9758f2e6c3"
+            "UID": "eea03f4aea392b90"
           },
           "InstalledVersion": "4.17.21",
           "FixedVersion": "4.18.0",
@@ -2722,7 +2722,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:4d51f43e9aa3753a62bac86216a7060a80f54f21e94d2d70cf6a38d80c940f6b",
+          "Fingerprint": "sha256:8e28d075b74261e14a6482c05e16cc9fa8203be5885dfeff83ed9592a3505601",
           "Title": "lodash: lodash: Arbitrary code execution via untrusted input in template imports",
           "Description": "The fix for CVE-2021-23337 added validation for the variable option in _.template but did not apply the same validation to options.imports key names, and both paths flow into the same Function() constructor sink. When an application passes untrusted input as options.imports key names, an attacker can inject default-parameter expressions that execute arbitrary code at template compilation time. Additionally, _.template uses assignInWith to merge imports, which enumerates inherited properties via for..in, so if Object.prototype has been polluted by another vector the polluted keys are copied into the imports object and passed to Function(). The issue is fixed in 4.18.1 for lodash, lodash-es, lodash-amd, and lodash.template. As a workaround, do not pass untrusted input as key names in options.imports; use only developer-controlled, static key names.",
           "Severity": "HIGH",
@@ -2866,7 +2866,7 @@
           "PkgName": "lodash",
           "PkgIdentifier": {
             "PURL": "pkg:npm/lodash@4.17.21",
-            "UID": "280eea9758f2e6c3"
+            "UID": "eea03f4aea392b90"
           },
           "InstalledVersion": "4.17.21",
           "FixedVersion": "4.17.23",
@@ -2878,7 +2878,7 @@
             "Name": "GitHub Security Advisory npm",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
-          "Fingerprint": "sha256:e76dd5273a23c21773bb34929edbbcc89f2252f5375ae2e7ec9df655923ba0cb",
+          "Fingerprint": "sha256:96dd6bbf6ce4595e23b71cccc22ce390790e02fcd9fcbd1ddeaf244fd36d6da1",
           "Title": "lodash: prototype pollution in _.unset and _.omit functions",
           "Description": "The _.unset and _.omit functions in Lodash are vulnerable to prototype pollution. An attacker can pass crafted paths which cause Lodash to delete methods from global prototypes. The issue permits deletion of properties but does not allow overwriting their original behavior. The issue is patched from 4.17.23 to 4.18.0 depending on the package: lodash, lodash-es, and lodash-amd in 4.17.23, and the standalone lodash.unset and lodash.omit packages in 4.18.0.",
           "Severity": "MEDIUM",
