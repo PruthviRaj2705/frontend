@@ -4,8 +4,8 @@
   "description": "Frontend with intentional security faults for DevSecOps testing",
   "main": "index.js",
   "dependencies": {
-    "lodash": "4.17.15",
-    "jquery": "3.4.1",
-    "axios": "0.21.1"
+    "lodash": "^4.17.21",
+    "jquery": "^3.7.1",
+    "axios": "^1.7.9"
   }
 }

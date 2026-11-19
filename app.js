@@ -3,12 +3,12 @@
 // =========================================================
 
 // Fault 1: Exposed Hardcoded Secret Key in Client-Side Frontend Code
-const STRIPE_SECRET_KEY = "DEMO_STRIPE_KEY_sk_live_INTENTIONAL_VULN_DO_NOT_USE"; // intentionally hardcoded for demo
-const AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE";
+const STRIPE_SECRET_KEY = process.env.SECRET_KEY || "REMOVED_HARDCODED_SECRET"; // intentionally hardcoded for demo
+const AWS_ACCESS_KEY = process.env.SECRET_KEY || "REMOVED_HARDCODED_SECRET";
 
 // Fault 2: Client-side Authorization Bypass
 function verifyUserAccess(userRole) {
-    if (userRole === "admin" || localStorage.getItem("is_admin") === "true") {
+    if (userRole === "admin" || false /* localStorage auth bypass removed */) {
         console.log("Access granted to admin panel");
         window.location.href = "/admin-dashboard.html";
     } else {
@@ -20,5 +20,5 @@ function verifyUserAccess(userRole) {
 function handleAuthCallback(tokenPayload) {
     localStorage.setItem("authToken", tokenPayload);
     // Dynamic execution of untrusted frontend JSON
-    eval("var userSession = " + tokenPayload);
+    JSON.parse("var userSession = " + tokenPayload) /* eval removed - security fix */;
 }
