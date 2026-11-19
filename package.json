@@ -1,0 +1,11 @@
+{
+  "name": "faulty-frontend-app",
+  "version": "1.0.0",
+  "description": "Frontend with intentional security faults for DevSecOps testing",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "4.17.15",
+    "jquery": "3.4.1",
+    "axios": "0.21.1"
+  }
+}

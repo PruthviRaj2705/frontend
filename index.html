@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insecure Store Portal - Faulty Frontend Demo</title>
+    <!-- Fault 1: Missing Subresource Integrity (SRI) on external CDN -->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <h1>Welcome to InsecureStore</h1>
+
+    <!-- Fault 2: Insecure cleartext HTTP form submission exposing passwords -->
+    <form action="http://insecure-api.internal/api/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        
+        <button type="submit">Login</button>
+    </form>
+
+    <div id="search-results"></div>
+
+    <script>
+        // Fault 3: DOM-based XSS via location.search innerHTML injection
+        const params = new URLSearchParams(window.location.search);
+        const query = params.get("q");
+        if (query) {
+            document.getElementById("search-results").innerHTML = "<h3>Search Results for: " + query + "</h3>";
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
