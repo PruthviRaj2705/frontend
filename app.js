@@ -3,7 +3,7 @@
 // =========================================================
 
 // Fault 1: Exposed Hardcoded Secret Key in Client-Side Frontend Code
-const STRIPE_SECRET_KEY = "sk_live_fake_secret_key_for_testing_purposes_only";
+const STRIPE_SECRET_KEY = "DEMO_STRIPE_KEY_sk_live_INTENTIONAL_VULN_DO_NOT_USE"; // intentionally hardcoded for demo
 const AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE";
 
 // Fault 2: Client-side Authorization Bypass
